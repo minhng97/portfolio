@@ -1,8 +1,7 @@
 import React from "react";
 
 const RECT_STYLE = {
-  // position: "absolute",
-  width: "400px",
+  width: "240px",
   height: "max-content",
   background: "rgba(51, 51, 50, 0.31)",
   borderRadius: "20px",
