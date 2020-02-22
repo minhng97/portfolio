@@ -1,16 +1,28 @@
 import React from "react";
-import Header from '../Header'
+
+
+
+import HeaderComponent from '../Header'
 import DesDiv from './DesDiv'
-import Footer from '../Footer'
+import FooterComponent from '../Footer'
 import './home.css'
+
+
 class HomePage extends React.Component {
 
   render() {
     return (
       <>
-        <Header />
+   
+        <HeaderComponent />
+        
+        
         <DesDiv />
-        <Footer />
+       
+
+      
+        <FooterComponent />
+     
       </>
     );
   }
