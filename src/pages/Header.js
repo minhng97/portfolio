@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Menu, Icon } from "antd";
 
 const MenuStyle = {
@@ -12,7 +13,7 @@ const MenuStyle = {
   justifyContent: "space-around"
 };
 
-class Header extends React.Component {
+class HeaderComponent extends React.Component {
   state = {
     current: "mail"
   };
@@ -32,18 +33,38 @@ class Header extends React.Component {
           selectedKeys={[this.state.current]}
           mode="horizontal"
         >
-          <Menu.Item key="mail">
-            <Icon type="home" />
-            Home
+          <Menu.Item
+            key="mail"
+          >
+            <Link to="/">
+              <Icon type="home" />
+              Home
+            </Link>
           </Menu.Item>
 
-          <Menu.Item key="about"><Icon type="user" />About</Menu.Item>
-          <Menu.Item key="myworks">My works</Menu.Item>
-          <Menu.Item key="contact"><Icon type="message" />Contact</Menu.Item>
+          <Menu.Item
+            key="about">
+            <Link to="/about">
+              <Icon type="user" />About</Link>
+          </Menu.Item>
+
+          <Menu.Item
+            key="myworks">
+            <Link to="/myworks">
+              My works
+            </Link>
+          </Menu.Item>
+
+          <Menu.Item
+            key="contact">
+            <Link to="/contact">
+              <Icon type="message" />Contact
+            </Link>
+          </Menu.Item>
         </Menu>
       </>
     );
   }
 }
 
-export default Header
+export default HeaderComponent
