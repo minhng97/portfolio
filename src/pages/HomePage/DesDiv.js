@@ -6,8 +6,12 @@ const DES_STYLE = {
   padding: "10px",
 };
 const H2_STYLE = {
-  color: "#402424",
-  marginTop: "10px"
+  padding: "6px",
+  width: "max-content",
+  color: "rgba(0, 0, 0, 0.91)",
+  marginTop: "10px",
+  background: "#ffffff",
+  borderRadius: "8px",
 }
 const words = "Welcome to my site"
 class DesDiv extends React.Component {
@@ -22,7 +26,7 @@ class DesDiv extends React.Component {
       <Row style={{}}>
       <Col span={12} offset={5}>
      <Title level={2} style={H2_STYLE}>A simple site built with love</Title>
-     {/* <span>minimalism, simple and elegant </span> */}
+     <span>minimalism, simple and elegant </span>
     </Col>
     </Row>
     </>
