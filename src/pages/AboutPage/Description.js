@@ -1,55 +1,35 @@
 import React, { Component } from 'react';
-import { Row, Col  } from 'antd';
+import { Card, Row, Col } from 'antd';
 
 class Description extends Component {
     render() {
         return (
-            <>
-                <div style={{margin: "auto"}}>
+            
+            <div style={{ background: '#ECECEC', padding: '30px', textAlign: "center", marginTop: "50px" }}>
                 <h3>What do I use when develop a site?</h3>
-                <div>
-                    <Row>
-                        <Col xs="24" md="8">
-                            <p>
-                                Front-end:
-                            </p>
-                            <div>
-                                <p>
-                                   Framework: ReactJs, AntDesign, Bootstrap, React-Strap
-                                </p>
-                                <p>
-                                    HTML5, CSS3, JavaScript (ES6) 
-                                </p>
 
-                            </div>
-                        </Col>
-
-                        <Col xs="24" md="8">
-                            <p>
-                                Back-end:
-                            </p>
-                            <div>
-                                <p>
-                                    NodeJs
-                                </p>
-                            </div>
-                        </Col>
-
-                        
-                        <Col xs="24" md="8">
-                            <p>
-                                Database:
-                            </p>
-                            <div>
-                                <p>
-                                    MongoDB, including Mongoose, MongoAtlas, Mongo3T
-                                </p>
-                            </div>
-                        </Col>
-                    </Row>
-                </div>
-                </div>
-            </>
+                <Row gutter={16}>
+                    <Col span={8}>
+                        <Card title="Front-end:" bordered={false}>
+                            <p>Framework: ReactJs</p>
+                            <p> AntDesign, Bootstrap, React-Strap</p>
+                            <p>HTML5, CSS3, JavaScript (ES6)</p>
+                        </Card>
+                    </Col>
+                    <Col span={8}>
+                        <Card title="Back-end" bordered={false}>
+                            <p>NodeJs</p>
+                            <p>Framework: ExpressJS</p>
+                        </Card>
+                    </Col>
+                    <Col span={8}>
+                        <Card title="Database" bordered={false}>
+                            <p>MongoDB</p>
+                            <p>  MongoDB, including Mongoose, MongoAtlas, Mongo3T</p>
+                        </Card>
+                    </Col>
+                </Row>
+            </div>
         );
     }
 }
