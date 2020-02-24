@@ -14,14 +14,12 @@ class HomePage extends React.Component {
     return (
       <>
    
-        <HeaderComponent />
         
         
         <DesDiv />
        
 
       
-        <FooterComponent />
      
       </>
     );
