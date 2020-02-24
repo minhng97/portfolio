@@ -1,12 +1,12 @@
 import React from "react";
 
 const RECT_STYLE = {
-  width: "300px",
+  width: "auto",
+  maxWidth: "300px",
   height: "max-content",
   background: "rgba(51, 51, 50, 0.31)",
   borderRadius: "20px",
   color: "white",
-  margin: "auto",
   fontSize: "30px",
   padding: "6px"
 };
