@@ -6,7 +6,7 @@ class Description extends Component {
         return (
             
             <div style={{ background: '#ECECEC', padding: '30px', textAlign: "center", marginTop: "50px" }}>
-                <h3>What do I use when develop a site?</h3>
+                <p style={{fontSize: "1.4rem"}}>What do I use when develop a site?</p>
 
                 <Row gutter={16}>
                     <Col span={8}>
