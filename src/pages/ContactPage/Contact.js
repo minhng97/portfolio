@@ -11,7 +11,9 @@ class Contact extends Component {
             Send me a message at:
                 </p>
                 <p  style={{fontSize: "1.4rem"}}>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer">
                 <Icon type="mail" theme="twoTone" /> <span style={{color: "#3f00ffc7", fontWeight: "bold"}}>minh.nineseven@gmail.com</span>
+                </a>
                 </p>
             
             </Card>
