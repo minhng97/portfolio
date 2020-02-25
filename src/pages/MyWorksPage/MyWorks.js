@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Row, Col } from 'antd';
-import HeaderComponent from '../Header';
-import FooterComponent from '../Footer';
+
 
 class MyWorks extends Component {
     render() {

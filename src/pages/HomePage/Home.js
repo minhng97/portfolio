@@ -2,9 +2,7 @@ import React from "react";
 
 
 
-import HeaderComponent from '../Header'
 import DesDiv from './DesDiv'
-import FooterComponent from '../Footer'
 import './home.css'
 
 
