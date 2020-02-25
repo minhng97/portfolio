@@ -2,9 +2,7 @@ import React from "react";
 import { Row, Col, Typography  } from 'antd';
 import Rectangle from './Rectangle'
 const { Title } = Typography;
-const DES_STYLE = {
-  padding: "10px",
-};
+
 const H2_STYLE = {
   padding: "6px",
   width: "auto",

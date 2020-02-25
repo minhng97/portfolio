@@ -12,11 +12,11 @@ const MenuStyle = {
   display: "flex",
   justifyContent: "space-around"
 };
-
 class HeaderComponent extends React.Component {
   state = {
     current: "mail"
   };
+
   handleClick = e => {
     console.log("click ", e);
     this.setState({
